@@ -16,7 +16,7 @@ app {
 }
 
 node {
-    version = '4.2.1'
+    version = '4.4.1'
     download = true
 }
 
@@ -26,17 +26,13 @@ dependencies {
     include "com.enonic.xp:lib-content:${xpVersion}"
     include "com.enonic.xp:lib-portal:${xpVersion}"
     include "com.enonic.xp:lib-thymeleaf:${xpVersion}"
-    webjar "org.webjars:react:0.14.7"
-    //include "com.enonic.xp:lib-xslt:${xpVersion}"
-    //include "com.enonic.xp:lib-mustache:${xpVersion}"
-    //include "com.enonic.xp:lib-i18n:${xpVersion}"
-    //include "com.enonic.xp:lib-auth:${xpVersion}"
-    //include "com.enonic.xp:lib-cache:${xpVersion}"
-    //include "com.enonic.xp:lib-context:${xpVersion}"
-    //include "com.enonic.xp:lib-http-client:${xpVersion}"
-    //include "com.enonic.xp:lib-io:${xpVersion}"
-    //include "com.enonic.xp:lib-mail:${xpVersion}"
-    //include "com.enonic.xp:lib-websocket:${xpVersion}"
+    webjar  "org.webjars:react:0.14.7"
+    webjar  "org.webjars.bower:bootstrap:4.0.0-beta"
+    include "com.enonic.xp:lib-auth:${xpVersion}"
+    include "com.enonic.xp:lib-context:${xpVersion}"
+    include "com.enonic.xp:lib-io:${xpVersion}"
+    include "com.enonic.xp:lib-mail:${xpVersion}"
+    include "com.enonic.xp:lib-websocket:${xpVersion}"
 }
 
 repositories {
